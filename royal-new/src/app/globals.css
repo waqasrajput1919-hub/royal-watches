@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+  --gold: #D4AF37;
+  --dark-gold: #B8941F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #B8941F 50%, #D4AF37 100%);
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.border-gold {
+  border-color: var(--gold);
+}
+
+.hover-gold:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.luxury-shadow {
+  box-shadow: 0 25px 50px -12px rgba(212, 175, 55, 0.25);
+}
+
+.watch-card {
+  transition: all 0.3s ease;
+  background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+}
+
+.watch-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px -12px rgba(212, 175, 55, 0.4);
+}
+
+.luxury-button {
+  background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
+  transition: all 0.3s ease;
+  border: 2px solid #D4AF37;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  color: black;
+}
+
+.luxury-button:hover {
+  background: linear-gradient(135deg, #B8941F 0%, #D4AF37 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.5);
+  border-color: #B8941F;
+}
+
+.hero-text {
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(135deg, #ffffff 0%, #D4AF37 50%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+}
+
+.navbar-blur {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.9);
+}
