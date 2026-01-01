@@ -54,9 +54,9 @@ export default function Home() {
             </div>
           </div>
           
-          {/* Ultra Stylish Main Title */}
+          {/* Smaller Main Title */}
           <div className="mb-12">
-            <h1 className="text-8xl md:text-[12rem] font-thin mb-6 tracking-[0.2em] leading-none relative">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-thin mb-6 tracking-[0.2em] leading-none relative">
               <span className="block bg-gradient-to-r from-white via-gold via-purple-300 via-gold to-white bg-clip-text text-transparent drop-shadow-2xl filter font-extralight animate-pulse">
                 ROYAL
               </span>
@@ -68,11 +68,11 @@ export default function Home() {
             {/* Luxury Subtitle */}
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gold/40 via-purple-400/30 via-gold/40 to-transparent h-px top-1/2 animate-pulse"></div>
-              <p className="text-3xl md:text-4xl font-extralight text-transparent bg-gradient-to-r from-gold via-purple-300 to-gold bg-clip-text mb-6 tracking-[0.4em] relative bg-black px-12 animate-pulse delay-1000">
+              <p className="text-xl sm:text-2xl md:text-4xl font-extralight text-transparent bg-gradient-to-r from-gold via-purple-300 to-gold bg-clip-text mb-6 tracking-[0.4em] relative bg-black px-12 animate-pulse delay-1000">
                 SWISS LUXURY
               </p>
             </div>
-            <p className="text-lg text-gray-300 font-extralight tracking-[0.3em] uppercase animate-pulse delay-1500">
+            <p className="text-sm sm:text-lg text-gray-300 font-extralight tracking-[0.3em] uppercase animate-pulse delay-1500">
               Handcrafted Excellence Since 1905
             </p>
           </div>
